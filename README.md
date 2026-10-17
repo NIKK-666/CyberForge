@@ -1,4 +1,4 @@
-# ForgeSentry AI -- Working Demo Prototype
+# CogniShield -- Working Demo Prototype
 
 An attack-path and blast-radius engine for CI/CD. It correlates a risky
 npm dependency update with the GitHub Actions job that would install it,
