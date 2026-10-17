@@ -67,5 +67,5 @@ Set `LLM_API_KEY` and fill in `_call_real_llm()` to use a real provider.
 3. Enable branch protection on `main` requiring the `CogniShield`
    status check, so the failing check actually blocks merges.
 4. Open a PR that bumps `left-padz` to `1.0.1` and watch
-   `.github/workflows/forgesentry.yml` run.
+   `.github/workflows/cognishield.yml` run.
 5. Comment `/shield fix` on that PR to see the fix PR open.
