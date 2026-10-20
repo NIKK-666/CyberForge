@@ -1,0 +1,9 @@
+digraph G {
+  "package:safe-pad@1.0.1";
+  "install:.github\workflows\ci.yml:lint";
+  "job:lint";
+  "secrets:none";
+  "package:safe-pad@1.0.1" -> "install:.github\workflows\ci.yml:lint" [label="lifecycle script runs on install"];
+  "install:.github\workflows\ci.yml:lint" -> "job:lint" [label="runs inside"];
+  "job:lint" -> "secrets:none" [label="has access to"];
+}

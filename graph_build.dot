@@ -1,0 +1,9 @@
+digraph G {
+  "package:safe-pad@1.0.1";
+  "install:.github\workflows\ci.yml:build";
+  "job:build";
+  "secrets:FAKE_SECRET";
+  "package:safe-pad@1.0.1" -> "install:.github\workflows\ci.yml:build" [label="lifecycle script runs on install"];
+  "install:.github\workflows\ci.yml:build" -> "job:build" [label="runs inside"];
+  "job:build" -> "secrets:FAKE_SECRET" [label="has access to"];
+}
