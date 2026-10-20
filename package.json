@@ -1,0 +1,10 @@
+{
+  "name": "victim-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo app that CogniShield protects",
+  "main": "index.js",
+  "dependencies": {
+    "safe-pad": "file:vendor/safe-pad-1.0.0.tgz"
+  }
+}
